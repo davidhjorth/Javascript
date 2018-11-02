@@ -1,0 +1,37 @@
+
+
+
+
+
+.flex-container {
+    display: flex;
+
+    background-color: red;
+    height: 760px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+.flex-container div {
+    background-color: white;
+    width: 300px;
+    margin: 0px;
+    text-align: center;
+    line-height: 150px;
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif;
+    
+  }
+
+ #sekund, #mili, #minut{
+    border-left: 2px solid rgb(99, 99, 99);
+    height: 150px;
+  
+    
+    
+    
+}
+
+  

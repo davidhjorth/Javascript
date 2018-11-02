@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="klocka.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            var ms = today.getMilliseconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('timme').innerHTML = h
+            document.getElementById('minut').innerHTML = m
+            document.getElementById('sekund').innerHTML = s
+            document.getElementById('mili').innerHTML = ms
+            var t = setTimeout(startTime, 101);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  
+            return i;
+        }
+        </script>
+
+
+
+
+
+</head>
+<body onload="startTime()">
+  
+        <div class="flex-container">
+          <div id="timme"></div>
+          <div id="minut"></div>
+          <div id="sekund"></div> 
+          <div id="mili"></div>  
+          </div>
+
+
+
+          
+</body>
+</html>

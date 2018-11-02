@@ -1,0 +1,30 @@
+body { height: 200px;
+    
+    background: linear-gradient(to right, red , yellow, purple, maroon, black, white, orange)
+    font-size: 30px;
+}
+
+
+
+
+#send1, #send2, #send3 {
+ 
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+    background: #000000;
+    outline: none;
+    
+    cursor: pointer;
+    border-radius: 5px; 
+ 
+    
+
+}
+
+#result1, #result2, #result3 {
+
+    width: 70px;
+    height: 40px;
+    font-size: 40px;
+}
